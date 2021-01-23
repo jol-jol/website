@@ -16,6 +16,12 @@
   font-weight: 400;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+.footer-heading {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
 /* header */
 .header img {
   display: inline;
@@ -159,3 +165,27 @@
 
 
 /* footer */
+.footer {
+  position: relative;
+  margin: 3vw 0 0 0;
+}
+
+.footer-main {
+  position: absolute;
+  bottom: 0;
+  width: 60vw;
+  background-color: var(--juno-red);
+  color: var(--juno-white);
+  padding: 3vh 5vw 3vh;
+}
+
+.footer-mailing {
+/*  display: inline-block;*/
+  position: sticky;
+  bottom: 0;
+  left: 60vw;
+  width: 40vw;
+  background-color: var(--juno-black);
+  color: var(--juno-white);
+  padding: 3vh 5vw 3vh;
+}
