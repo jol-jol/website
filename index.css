@@ -111,4 +111,51 @@
   bottom: 5px;
 }
 
+/* posts */
+.posts {
+  padding: 0vw 5vw;
+  background-color: var(--juno-orange);
+}
+.posts .heading {
+  padding: 2vw;
+}
+
+.posts-container-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.posts-card-container {
+  color: var(--juno-black);
+  padding: 2vh 2vw;
+}
+
+.posts-card-container img {
+  width: -webkit-fill-available;
+}
+
+.posts-card-container button {
+  color: black;
+  background-color: var(--juno-white);
+  border: 2px solid var(--juno-red);
+  padding: 10px;
+}
+
+.posts-card-container button:hover {
+  background-color: var(--juno-red);
+  color: var(--juno-white);
+}
+
+.posts-card-text-content {
+  background-color: var(--juno-white);
+  padding: 2vh 2vw;
+  position: relative;
+  bottom: 5px;
+}
+
+.post-subheader {
+  color: var(--juno-red);
+}
+
+
 /* footer */
