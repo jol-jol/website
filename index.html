@@ -13,17 +13,25 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./index.js"></script>
   </head>
   <body>
     <div class="main-container">
       <div class="header">
         <img src="./assets/juno-logo.png" />
-        <div class="nav-container nav-footer-links">
-          <a>Course</a>
-          <a>About</a>
-          <a>Alumni</a>
-          <a>Blog</a>
+        <div class="topnav" id="course">
+          <a href="#course" class="active">Course</a>
+          <a href="#about">About</a>
+          <a href="#alumni">Alumni</a>
+          <a href="#blog">Blog</a>
+          <a href="javascript:void(0);" class="icon" onclick="navbarClick()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
       <div class="content">
@@ -39,119 +47,121 @@
             </p>
           </div>
         </div>
-        <div class="blog">
-          <h1 class="heading">Blog</h1>
-          <div class="blog-block-container">
-            <div class="blogs-container-row">
-              <div class="blog-card-container">
-                <img src="./assets/image-2.jpg" />
-                <div class="card-text-content">
-                  <div class="body-text">date</div>
-                  <h2>Juno Tech Test</h2>
-                  <p class="body-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Esse, sunt dolore repellendus ratione consequuntur sit
-                    repellat, autem similique nemo fugit nulla tenetur
-                    perspiciatis vitae sed aliquid inventore odit molestiae
-                    temporibus.
-                  </p>
-                  <div class="button-row"><button>Read More</button></div>
-                </div>
-              </div>
-              <div class="blog-card-container">
-                <img src="./assets/image-2.jpg" />
-                <div class="card-text-content">
-                  <div class="body-text">date</div>
-                  <h2>Juno Tech Test</h2>
-                  <p class="body-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Esse, sunt dolore repellendus ratione consequuntur sit
-                    repellat, autem similique nemo fugit nulla tenetur
-                    perspiciatis vitae sed aliquid inventore odit molestiae
-                    temporibus.
-                  </p>
-                  <div class="button-row"><button>Read More</button></div>
-                </div>
-              </div>
-              <div class="blog-card-container">
-                <img src="./assets/image-2.jpg" />
-                <div class="card-text-content">
-                  <div class="body-text">date</div>
-                  <h2>Juno Tech Test</h2>
-                  <p class="body-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Esse, sunt dolore repellendus ratione consequuntur sit
-                    repellat, autem similique nemo fugit nulla tenetur
-                    perspiciatis vitae sed aliquid inventore odit molestiae
-                    temporibus.
-                  </p>
-                  <div class="button-row"><button>Read More</button></div>
-                </div>
+        <div id="blog" class="block-container">
+          <div class="heading">Blog</div>
+          <div class="blog-block-grid">
+            <div class="card-container">
+              <img src="./assets/image-2.jpg" />
+              <div class="card-text-content">
+                <div class="body-text">date</div>
+                <h2>Juno Tech Test</h2>
+                <p class="body-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Esse, sunt dolore repellendus ratione consequuntur sit
+                  repellat, autem similique nemo fugit nulla tenetur
+                  perspiciatis vitae sed aliquid inventore odit molestiae
+                  temporibus.
+                </p>
+                <div class="button-row"><button>Read More</button></div>
               </div>
             </div>
-            <div class="about-container">
+            <div class="card-container">
+              <img src="./assets/image-2.jpg" />
+              <div class="card-text-content">
+                <div class="body-text">date</div>
+                <h2>Juno Tech Test</h2>
+                <p class="body-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Esse, sunt dolore repellendus ratione consequuntur sit
+                  repellat, autem similique nemo fugit nulla tenetur
+                  perspiciatis vitae sed aliquid inventore odit molestiae
+                  temporibus.
+                </p>
+                <div class="button-row"><button>Read More</button></div>
+              </div>
+            </div>
+            <div class="card-container second-row">
+              <img src="./assets/image-5.jpg" />
+              <div class="card-text-content">
+                <div class="body-text">date</div>
+                <h2>Juno Tech Test</h2>
+                <p class="body-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Esse, sunt dolore repellendus ratione consequuntur sit
+                  repellat, autem similique nemo fugit nulla tenetur
+                  perspiciatis vitae sed aliquid inventore odit molestiae
+                  temporibus.
+                </p>
+                <div class="button-row"><button>Read More</button></div>
+              </div>
+            </div>
+            <div id="about" class="card-container about-col">
               <img src="./assets/image-3.jpg" />
-              <div class="about-card-text-container">
+              <div class="card-text-content">
                 <h2>About Us</h2>
-                <p>
+                <p class="body-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Tempora ipsum temporibus rem illo dolor minus delectus error.
                   Vel molestias ut perferendis corporis adipisci quidem,
-                  praesentium eos quas accusantium, aliquam maxime!
+                  praesentium eos quas accusantium, aliquam maxime! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Tempora ipsum
+                  temporibus rem illo dolor minus delectus error. Vel molestias
+                  ut perferendis corporis adipisci quidem, praesentium eos quas
+                  accusantium, aliquam maxime!
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="posts">
-          <h1 class="heading">Related post:</h1>
-            <div class="posts-container-row">
-              <div class="posts-card-container">
-                <img src="./assets/image-2.jpg" />
-                <div class="posts-card-text-content">
-                  <div class="body-text">date</div>
-                  <h2 class="post-subheader">Juno Tech Test</h2>
-                  <p class="body-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Esse, sunt dolore repellendus ratione consequuntur sit
-                    repellat, autem similique nemo fugit nulla tenetur
-                    perspiciatis vitae sed aliquid inventore odit molestiae
-                    temporibus.
-                  </p>
-                  <div class="button-row"><button>Read More</button></div>
-                </div>
-              </div>
-              <div class="posts-card-container">
-                <img src="./assets/image-2.jpg" />
-                <div class="posts-card-text-content">
-                  <div class="body-text">date</div>
-                  <h2 class="post-subheader">Juno Tech Test</h2>
-                  <p class="body-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Esse, sunt dolore repellendus ratione consequuntur sit
-                    repellat, autem similique nemo fugit nulla tenetur
-                    perspiciatis vitae sed aliquid inventore odit molestiae
-                    temporibus.
-                  </p>
-                  <div class="button-row"><button>Read More</button></div>
-                </div>
-              </div>
-              <div class="posts-card-container">
-                <img src="./assets/image-2.jpg" />
-                <div class="posts-card-text-content">
-                  <div class="body-text">date</div>
-                  <h2 class="post-subheader">Juno Tech Test</h2>
-                  <p class="body-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Esse, sunt dolore repellendus ratione consequuntur sit
-                    repellat, autem similique nemo fugit nulla tenetur
-                    perspiciatis vitae sed aliquid inventore odit molestiae
-                    temporibus.
-                  </p>
-                  <div class="button-row"><button>Read More</button></div>
-                </div>
+        <div class="block-container posts-container">
+          <div class="heading">Related post:</div>
+          <div class="posts-container-grid">
+            <div class="card-container post-card">
+              <img src="./assets/image-2.jpg" />
+              <div class="card-text-content post-card-text">
+                <div class="body-text">Jan 19th 2020</div>
+                <h2 class="post-subheader">Juno Tech Test</h2>
+                <p class="body-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Esse, sunt dolore repellendus ratione consequuntur sit
+                  repellat, autem similique nemo fugit nulla tenetur
+                  perspiciatis vitae sed aliquid inventore odit molestiae
+                  temporibus.
+                </p>
+                <div class="button-row"><button>Read More</button></div>
               </div>
             </div>
+            <div class="card-container post-card">
+              <img src="./assets/image-2.jpg" />
+              <div class="card-text-content post-card-text">
+                <div class="body-text">Jan 19th 2020</div>
+                <h2 class="post-subheader">Juno Tech Test</h2>
+                <p class="body-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Esse, sunt dolore repellendus ratione consequuntur sit
+                  repellat, autem similique nemo fugit nulla tenetur
+                  perspiciatis vitae sed aliquid inventore odit molestiae
+                  temporibus.
+                </p>
+                <div class="button-row"><button>Read More</button></div>
+              </div>
+            </div>
+            <div class="card-container post-card">
+              <img src="./assets/image-2.jpg" />
+              <div class="card-text-content post-card-text">
+                <div class="body-text">Jan 19th 2020</div>
+                <h2 class="post-subheader">Juno Tech Test</h2>
+                <p class="body-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Esse, sunt dolore repellendus ratione consequuntur sit
+                  repellat, autem similique nemo fugit nulla tenetur
+                  perspiciatis vitae sed aliquid inventore odit molestiae
+                  temporibus.
+                </p>
+                <div class="button-row"><button>Read More</button></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer">
@@ -161,39 +171,36 @@
           </div>
           <h2 class="footer-header">Juno Tech Test</h2>
           <p class="body-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>
-              Maecenas varius tortor nibh, sit amet tempor nibh 
-              finibus et.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            Maecenas varius tortor nibh, sit amet tempor nibh finibus et.
           </p>
-        <div class="nav-footer-links footer-links">
-          <a>Home</a>
-          <a>Course</a>
-          <a>About</a>
-          <a>Alumni</a>
-          <a>Blog</a>
-        </div>
-        <p class="body-text">
-          © 2012-2019 Juno College of Technology.
-        </p>
-
+          <div class="nav-footer-links footer-links">
+            <a>Home</a>
+            <a>Course</a>
+            <a>About</a>
+            <a>Alumni</a>
+            <a>Blog</a>
+          </div>
+          <p class="body-text">© 2012-2019 Juno College of Technology.</p>
         </div>
         <div class="footer-mailing">
-            <h1 class="footer-heading">Join our mailing list</h1>
-            <input type="text" class="footer-text-field" 
-                   placeholder="Your email address"/>
-            <button class="footer-subscribe-button body-text">
-              Subscribe
-            </button>
-            <p class="body-text">
-              Lorem ipsum dolor sit amet, <br>
-              consectetur adipisicing elit maecenas.
-            </p>
-            <div class="social-media-icons">
-              <img src="./assets/facebook-f-brands.svg" />
-              <img src="./assets/twitter-brands.svg" />
-              <img src="./assets/instagram-brands.svg" />
-              <img src="./assets/github-brands.svg" />
-            </div>
+          <h1 class="footer-heading">Join our mailing list</h1>
+          <input
+            type="text"
+            class="footer-text-field"
+            placeholder="Your email address"
+          />
+          <button class="footer-subscribe-button body-text">Subscribe</button>
+          <p class="body-text">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipisicing elit maecenas.
+          </p>
+          <div class="social-media-icons">
+            <img src="./assets/facebook-f-brands.svg" />
+            <img src="./assets/twitter-brands.svg" />
+            <img src="./assets/instagram-brands.svg" />
+            <img src="./assets/github-brands.svg" />
+          </div>
         </div>
       </div>
     </div>
