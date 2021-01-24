@@ -47,9 +47,6 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: var(--juno-white);
   padding: 1rem;
-  float: left;
-  display: block;
-  text-align: left;
   text-decoration: none;
 }
 
@@ -213,8 +210,6 @@
 }
 
 .footer-links {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   color: var(--juno-white);
 }
 
